@@ -4,13 +4,9 @@ import static org.junit.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.HashMap;
-import java.util.Map;
-
 
 public class Test {
     private WebDriver driver;
-    private Map<String, Object> vars;
     JavascriptExecutor js;
     @Before
     public void setUp() {

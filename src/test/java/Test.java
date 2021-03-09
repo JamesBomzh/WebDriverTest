@@ -1,4 +1,5 @@
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import static org.junit.Assert.*;
 import org.openqa.selenium.*;
@@ -36,5 +37,6 @@ public class Test {
             // убеждаемся, что статья имеет именно тот заголовок
             // Также можно проверить с использованием driver.getTitle(), но там не совсем "Foundation Level Automotive Software Tester"
         }
+        else Assert.fail("No results found"); // ошибка при отсутствии результатов поиска
     }
 }
